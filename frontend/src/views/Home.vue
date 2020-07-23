@@ -1,7 +1,7 @@
 <template>
   <div class="section w-100 d-flex align-items-center align-content-center justify-content-center">
     <div class="logo d-flex flex-column align-items-center">
-      <i>ORDI</i>
+      <i>ORDI</i>this is a test
       <i class="fas fa-spinner fa-pulse"></i>
     </div>
 
