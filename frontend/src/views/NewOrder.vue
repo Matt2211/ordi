@@ -29,7 +29,7 @@
           ></FormInputSelectComponent>
         </div>
 
-        <router-link to="/">
+        <router-link to="/TablesOverview">
           <button class="btn text-white btn-register m-auto d-block">GENERA TAVOLO</button>
         </router-link>
       </form>

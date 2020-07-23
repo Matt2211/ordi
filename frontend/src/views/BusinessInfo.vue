@@ -31,7 +31,7 @@
           ></FormInputComponent>
         </div>
 
-        <router-link to="/TablesOverview">
+        <router-link to="/NewOrder">
           <button class="btn text-white btn-register m-auto d-block">AVANTI</button>
         </router-link>
       </form>
