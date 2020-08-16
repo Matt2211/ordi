@@ -13,7 +13,7 @@ export default {
       type: String,
       required: true,
       validator: function(value) {
-        return ["checkbox, radio, toggle"].indexOf(value) !== 1;
+        return ["checkbox", "radio", "toggle"].indexOf(value) !== 1;
       }
     },
     id: {

@@ -16,7 +16,7 @@ export default {
       type: String,
       required: true,
       validator: function(value) {
-        return ["text, email, password, number"].indexOf(value) !== 1;
+        return ["text", "email", "password", "number"].indexOf(value) !== 1;
       }
     },
     id: {
