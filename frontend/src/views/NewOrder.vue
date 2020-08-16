@@ -1,9 +1,19 @@
 <template>
-  <div>
-    <HeaderComponent></HeaderComponent>
+ <div
+    class="section bg-primary d-flex flex-column align-content-center justify-content-center p-3"
+  >
+    <div class="registration-section text-white">
+      <div class="logo-small fw-700">Nuovi Clienti</div>
+      <p class="lead fw-300 text-center text-secondary">
+        Benvenuto su Ordi
+        <br class="d-none d-md-block" />Some copy here
+      </p>
+    </div>
+    
 
-    <div class="col-12 col-md-4 offset-md-4 reg-form">
-      <div class="col-12 mt-4 mb-4 text-center fw-500 text-primary">Urra! Nuovi Clienti! :D</div>
+     <div class="row">
+      <div class="col-12 col-md-4 offset-md-4">
+    
       <form class="text-primary">
         <div class="form-row">
           <FormInputComponent
@@ -20,25 +30,27 @@
             id="totalSeats"
             class="col-6"
           ></FormInputComponent>
-          <FormInputCheckRadioComponent type="checkbox" label="Ci sono allergici?"></FormInputCheckRadioComponent>
+          <FormInputCheckRadioComponent type="checkbox" class="mt-3 text-white" label="Ci sono allergici?">
+
+          </FormInputCheckRadioComponent>
           <FormInputSelectComponent
             v-if="allergies"
-            class="col-12"
+            class="col-12 mt-3"
             label="Tipo di Allergie"
             id="businessType"
           ></FormInputSelectComponent>
         </div>
 
         <router-link to="/TablesOverview">
-          <button class="btn text-white btn-register m-auto d-block">GENERA TAVOLO</button>
+          <button class="btn text-white btn-register m-auto d-block">Genera Tavolo</button>
         </router-link>
       </form>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import HeaderComponent from "@/components/HeaderComponent.vue";
 import FormInputComponent from "@/components/formInputs/FormInputComponent.vue";
 import FormInputSelectComponent from "@/components/formInputs/FormInputSelectComponent.vue";
 import FormInputCheckRadioComponent from "@/components/formInputs/FormInputCheckRadioComponent.vue";
@@ -53,7 +65,6 @@ export default {
   components: {
     FormInputComponent,
     FormInputSelectComponent,
-    HeaderComponent,
     FormInputCheckRadioComponent
   },
   methods: {}

@@ -1,5 +1,5 @@
 <template>
-  <div class="form-group">
+  <div class="form-group select-style">
     <label :for="id">{{ label }}</label>
     <select :id="id" class="form-control" :placeholder="placeholder">
       <option selected disabled>Seleziona...</option>

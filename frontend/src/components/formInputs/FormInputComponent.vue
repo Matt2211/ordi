@@ -1,5 +1,5 @@
 <template>
-  <div class="form-group">
+  <div class="form-group mb-0">
     <label :for="id">{{ label }}</label>
     <input :id="id" :type="type" class="form-control" :placeholder="placeholder" />
   </div>
