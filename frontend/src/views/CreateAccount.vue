@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 <template>
   <div
-    class="section bg-primary d-flex flex-column align-content-center justify-content-center p-3"
+    class="section d-flex flex-column align-content-center justify-content-center p-3"
   >
     <div class="registration-section text-white">
       <div class="logo-small fw-700">ORDI</div>

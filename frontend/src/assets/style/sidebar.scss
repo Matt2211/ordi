@@ -1,0 +1,78 @@
+
+//     // Sidebar style
+
+// #mySidenav {
+//     width: 250px;
+// }
+
+// #main {
+//     margin-left: 250px;
+// }
+
+.sidebar {
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+.sidebar ul.menu-elements {
+    padding: 10px 0;
+    border-bottom: 1px solid #0c0f14;
+    transition: all .3s;
+}
+ 
+.sidebar ul li a {
+    display: block;
+    padding: 10px 20px;
+    border: 0;
+    color: #fff;
+}
+ 
+.sidebar ul li a:hover,
+.sidebar ul li a:focus,
+.sidebar ul li.active > a:hover,
+.sidebar ul li.active > a:focus {
+    outline: 0;
+    background: #0c0f14;
+    color: #fff;
+}
+ 
+.sidebar ul li a i {
+    margin-right: 5px;
+}
+ 
+.sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    background: #0f1218;
+    color: #fff;
+}
+ 
+.sidebar ul ul a {
+    background: #0f1218;
+    padding-left: 30px;
+    font-size: 14px;
+}
+ 
+.sidebar ul ul li.active > a {
+    background: #0c0f14;
+}
+ 
+.sidebar a[data-toggle="collapse"] {
+    position: relative;
+}
+ 
+.sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}

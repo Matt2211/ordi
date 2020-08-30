@@ -51,8 +51,10 @@ $font-weights: (
 
 $base-font-family: "Montserrat";
 
-body {
+html, body {
   font-family: $base-font-family;
+  background-color: #191F29;
+  height: 100%;
 }
 
 .section {
@@ -134,14 +136,15 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 130px);
+  grid-template-columns: repeat(8, 1fr);
   row-gap: 5px;
 }
 
 .cardProduct {
-    width: 100px;
+  width: 150px;
   margin: 5px;
   height: 100%;
+  background-color: #fff;
   border: 2px solid #e3e3e3;
   .product-name {
     font-size: 15px;
@@ -217,4 +220,5 @@ select {
         bottom: 10px;
         z-index: 1;
     }
-    
+
+

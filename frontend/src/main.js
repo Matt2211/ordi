@@ -8,14 +8,18 @@ import "bootstrap-vue";
 // Importing scss files
 import "./assets/style/reset.scss";
 import "./assets/style/custom.scss";
+import "./assets/style/sidebar.scss";
 
 // Importing Montserrat font
 import "typeface-montserrat";
 
+
+
 Vue.config.productionTip = false;
+
 
 new Vue({
   router,
-  store,
+    store,
   render: (h) => h(App),
 }).$mount("#app");

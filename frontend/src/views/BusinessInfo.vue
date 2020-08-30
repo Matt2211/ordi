@@ -1,6 +1,6 @@
 <template>
   <div
-    class="section bg-primary d-flex flex-column align-content-center justify-content-center p-3"
+    class="section d-flex flex-column align-content-center justify-content-center p-3"
   >
     <div class="registration-section text-white">
       <div class="logo-small fw-700">Ciao @name!</div>
@@ -17,7 +17,7 @@
             <FormInputComponent
               type="text"
               label="Nome della tua attività commerciale"
-              placeholder="Inserisci Nome"
+              placeholder="Nome del Business"
               id="businessName"
               class="col-12"
             ></FormInputComponent>
@@ -36,7 +36,7 @@
             ></FormInputComponent>
           </div>
 
-          <router-link to="/NewOrder">
+          <router-link to="/BusinessCreated">
             <button class="btn text-white btn-register w-100 mt-5">Avanti</button>
           </router-link>
         </form>
