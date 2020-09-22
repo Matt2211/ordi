@@ -32,11 +32,11 @@ mongoose.connect(db, { useNewUrlParser: true }).then(() => {
     console.log(`Unable to connect to database ${err}`)
 })
 
-/*
+
 app.get('/', (req,res) => {
     return res.send("<h1>Hello!<h1>")
 })
-*/
+
 
 // Bring in the users route
 const users = require('./routes/api/users')

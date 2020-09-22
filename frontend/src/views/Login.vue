@@ -6,49 +6,33 @@
     <div class="registration-section text-white">
       <div class="logo-small fw-700">ORDI</div>
       <p class="lead fw-300 text-center text-secondary">
-        L’App che ti permette di gestire
-        <br class="d-none d-md-block" />in modo facile e sicuro la tua attività
+        Esegui il Login
       </p>
     </div>
     <div class="row">
       <div class="col-12 col-md-4 offset-md-4">
         <form>
           <div class="form-row">
-            <FormInputComponent
-              type="text"
-              placeholder="Username"
-              id="Username"
-              class="col-md-6"
-            ></FormInputComponent>
-            <FormInputComponent
-              type="text"
-              placeholder="Nome"
-              id="name"
-              class="col-md-6"
-            ></FormInputComponent>
+            
             <FormInputComponent
               type="email"
-              placeholder="E-mail"
-              id="email"
-              class="col-12"
+              placeholder="Email Address"
+              id="emailAddress"
+              class="col-md-12"  
             ></FormInputComponent>
+    
             <FormInputComponent
               type="password"
               placeholder="Password"
               id="password"
               class="col-12"
             ></FormInputComponent>
-            <FormInputComponent
-              type="password"
-              placeholder="Ripeti Password"
-              id="passwordRepeat"
-              class="col-12"
-            ></FormInputComponent>
+           
           </div>
 
-          <router-link to="/Login">
+          <router-link to="/BusinessInfo">
             <button class="btn text-white btn-register w-100 mt-5">
-              Registrati
+              Accedi
             </button>
           </router-link>
         </form>
@@ -61,7 +45,7 @@
 import FormInputComponent from "@/components/formInputs/FormInputComponent.vue";
 
 export default {
-  name: "CreateAccount",
+  name: "Login",
   components: {
     FormInputComponent,
   },

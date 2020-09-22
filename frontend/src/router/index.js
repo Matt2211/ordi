@@ -35,6 +35,11 @@ const routes = [
     name: "TablesOverview",
     component: () => import("../views/TablesOverview.vue"),
   },
+  {
+    path: "/login",
+    name: "Login",
+    component: () => import("../views/Login.vue"),
+  },
 ];
 
 const router = new VueRouter({

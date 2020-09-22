@@ -21,7 +21,7 @@ export default {
   mounted() {
     window.setTimeout(function() {
       window.location.href = "/createAccount";
-    }, 5000);
+    }, 100);
   }
 };
 </script>
